@@ -1,15 +1,15 @@
 :root{
-  --navy:#071326;
-  --navy-soft:#0d1c34;
-  --cream:#f7efe5;
-  --cream-2:#fffaf3;
-  --wine:#8f1731;
-  --gold:#c69b5c;
-  --muted:#6f6a64;
-  --line:rgba(7,19,38,.12);
-  --white:#ffffff;
-  --shadow:0 24px 80px rgba(7,19,38,.16);
-  --radius:28px;
+ --navy:#071326;
+ --navy-soft:#0d1c34;
+ --cream:#f7efe5;
+ --cream-2:#fffaf3;
+ --wine:#8f1731;
+ --gold:#c69b5c;
+ --muted:#6f6a64;
+ --line:rgba(7,19,38,.12);
+ --white:#ffffff;
+ --shadow:0 24px 80px rgba(7,19,38,.16);
+ --radius:28px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
