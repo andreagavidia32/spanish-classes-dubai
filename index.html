@@ -13,6 +13,24 @@
 
   gtag('config', 'AW-18488445033');
 </script>
+    <!-- Event snippet for Reservar cita conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18488445033/FP73COOEuo0dEOmQ_e9E',
+      'value': 1.0,
+      'currency': 'CLP',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spanish Classes Dubai | Online Spanish Lessons for Kids & Teens</title>
@@ -143,8 +161,8 @@
         <h2>Book a free 30-minute trial lesson.</h2>
         <p>No commitment. We’ll get to know your child, assess their level and recommend the best learning plan.</p>
         <div class="hero-actions centered-actions">
-          <a class="btn primary" href="https://calendar.app.google/3cwLbx3p3MCGocRLA" target="_blank" rel="noopener">Book Free Trial</a>
-          <a class="btn secondary" href="https://wa.me/971581565619" target="_blank" rel="noopener">Chat on WhatsApp</a>
+<a class="btn primary" href="https://calendar.app.google/3cwLbx3p3MCGocRLA" target="_blank" rel="noopener" onclick="gtag_report_conversion(this.href); return false;">Book Free Trial</a>
+            <a class="btn secondary" href="https://wa.me/971581565619" target="_blank" rel="noopener">Chat on WhatsApp</a>
         </div>
       </div>
     </section>
